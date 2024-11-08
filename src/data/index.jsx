@@ -1,19 +1,11 @@
-import { SiMongodb, SiNextdotjs, SiAliexpress, SiCanva, SiNestjs, SiInstagram } from 'react-icons/si'
-import { GrGraphQl } from "react-icons/gr";
+import { SiInstagram } from 'react-icons/si'
+
 import { AiFillGithub } from 'react-icons/ai'
 import { CiLinkedin } from 'react-icons/ci'
-import { SiTypescript } from "react-icons/si";
-import { SiPostgresql } from "react-icons/si";
-import { DiPhotoshop } from "react-icons/di";
-import {
-   FaHtml5, FaCss3Alt,
-  FaNodeJs, FaPython, FaFigma, FaAngular
-} from 'react-icons/fa'
-import { RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri";
-import { TbBrandReact, TbBrandMysql } from "react-icons/tb";
+
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 import { IoCallOutline, IoLocationOutline } from 'react-icons/io5';
-import {project1,project2,project3,project4,project5 } from '../assets/images'
+import { heartratePack,sbar, patrick, martin, parfaite, arsene, joel } from '../assets/images'
 
 
 export const menus = [
@@ -58,45 +50,51 @@ export const skills = [
     ]
   },
   
+  
 ]
-
+export const ourTeamMembers = [
+  {
+   name:"MANIBAHO Patrick",
+   position:"Founder and CEO, Software engineer with background in health, 9 years of experience in Referral Hospital",
+   image:patrick
+  },
+  {
+    name:"Dr. NSHIMYUMUKIZA Martin",
+    position:"MD, MMED (Internist), KIBOGORA Level 2 Teaching Hospital, Rheumatology fellow to be, Enthusiast in research, and the use of AI in healthcare sector",
+    image:martin
+  },
+  {
+    name:"TWAGIRAMARIYA Parfaite",
+    position:"Software Engineer and CTO at PACK Technology",
+    image:parfaite
+  },
+  {
+    name:"DR. ITUZE Arsene",
+    position:"Medical Doctor",
+    image:arsene
+  },
+  {
+    name:"MINANI Joel",
+    position:"Designer and Software Enginner",
+    image:joel
+  }
+]
 
 export const projects = [
   {
-    name: 'SBAR Healtcare',
-    description: `Digital SBAR for Health care system communication and patient's information exchange.Built with Nest.js,Postgres,TypeORM,GraphQL,Angular and Tailwind css`,
-    image: project1,
+    name: 'SBAR Healthcare',
+    description: `Digital SBAR for Health care system communication and patient's information exchange.s`,
+    image: sbar,
     url: 'https://sbar-apollo-angular.vercel.app/',
   },
 
   {
-    name: 'Pulse',
-    description: `The brilliant performance management
-    platform around the world. Built with Express.js,Typescript,GraphQL, MOngoDB,React.js and tailwind`,
-    image: project2,
-    url: 'https://beta.devpulse.org/',
+    name: 'pHealth',
+    description: `pHealth is a mobile app offering real-time fetal heart rate monitoring through the pBelt, personalized health information, pregnancy tracking, and more.pBelt is a wearable device that connects to the mobile app for monitoring fetal health.`,
+    image: heartratePack,
+    url: '',
   },
-
-  {
-    name: 'PackMedia',
-    description: `A platform for developers to interact, share skills, and collaborate. Developed in Next.js, TypeScript, and Firebase.`,
-    image: project3,
-    url: 'https://packmedia-next.vercel.app/',
-  },
-
-  {
-    name: 'ShopMart',
-    description: `A multi-vendor e-commerce platform . Built with React.js and tailwind on frontend and node.js on backend`,
-    image: project4,
-    url: 'https://ecommerce-app-champions-fe.vercel.app/',
-  },
-  {
-    name: 'BakeHaven',
-    description: `Specializing in custom cakes, cupcakes, and other baked goods for events. Built with Angular, Nest.js, PostgreSQL, and TypeORM`,
-    image: project5,
-    url: 'https://github.com/patsicko/bakehaven-fe',
-  },
-
+  
 ];
 
 export const socialHandles = [
@@ -123,7 +121,7 @@ export const contactInfo = [
   {
     name: "Email",
     icon: <MdOutlineAlternateEmail />,
-    value: "patsicko@gmail.com",
+    value: "packtech20@gmail.com",
   },
   {
     name: "Phone",
@@ -146,13 +144,14 @@ export const footer = [
       { name: "Skills" },
       { name: "Projects" },
       { name: "Contact" },
+      
     ]
   },
   {
     group: "Contacts",
     routes: [
       {
-        name: "patsicko@gmail.com",
+        name: "packtech20@gmail.com",
         icon: <MdOutlineAlternateEmail />,
       },
       {

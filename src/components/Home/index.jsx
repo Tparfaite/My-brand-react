@@ -1,8 +1,8 @@
 import  { useState, useEffect } from 'react';
 
 
-import homepack from "../../assets/images/homepack.png"
-import idoGif from '../../assets/images/ido.gif';
+import homepack from "../../assets/images/homepack.png";
+import { homecomp} from '../../assets/images';
 
 const Home = () => {
   const [displayedText, setDisplayedText] = useState('');
@@ -48,7 +48,7 @@ const Home = () => {
         <img
           src={homepack}
           alt="mypic"
-          className="h-auto w-80  rounded-xl shadow-lg"
+          className="h-auto w-80 rounded-xl shadow-lg"
         />
         <div className=" m-2 lg:m-10 w-full md:w-1/2">
           <p className="shadow p-5 text-md  md:text-xl lg:text-2xl ">{displayedText}</p>
@@ -57,6 +57,7 @@ const Home = () => {
             <p className='shadow p-5 text-sm md:text-xl lg:text-sm '>
             Pack Technology is committed to addressing pressing global challenges through innovative tech solutions, empowering individuals with the knowledge and skills they need to succeed and collaborates with international organizations for wider impact.
             </p>
+            <img src={homecomp} alt="devops" className=' pt-5 h-auto mx-auto rounded-md w-80 object-cover object-center  ' />
           </div>
         </div>
       </div>

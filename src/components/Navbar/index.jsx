@@ -51,7 +51,7 @@ const Navbar = () => {
       <div className="column">
         <SocialHandles/>
         <ThemeToggle/>
-        <a href="#contact" className='btn btn__primary'>Let's Connect</a>
+        <a href="#contact" className= 'btn btn__primary my-auto hidden md:inline-block'>Let's Connect</a>
         <div className="menu__icon"  onClick={()=>setOpenSidebar(!openSidebar)}>
           <TiThMenu/>
         </div>

@@ -40,9 +40,9 @@ const Contact = () => {
   return (
     <section id='contact'>
       <div className="container full__height">
-        <h3 className="sub__title">I would like to connect with you!</h3>
+        <h3 className="sub__title">We would like to connect with you!</h3>
         <h1 className="title">
-          <span className="text__gradient">Contact Me</span>
+          <span className="text__gradient">Contact Us</span>
         </h1>
         <div className="contact__form">
           <div className="column">
@@ -54,7 +54,7 @@ const Contact = () => {
                     <div className="icon__container">
                       {list.icon}
                     </div>
-                    <p>{list.value}</p>
+                    <p className="text-xs">{list.value}</p>
                   </div>
                 ))
               }
@@ -63,7 +63,7 @@ const Contact = () => {
           <div className="column">
                <div className="form__top">
                <h3 className="sub__title color__primary">Keep In Touch</h3>
-               <p>Fill the form to get in touch with me</p>
+               <p>Fill the form to get in touch with us</p>
                {messageSent && <p className="success__message color__primary">Your message has been sent successfully!</p>}
                </div>
                <form ref={form} onSubmit={sendEmail}>
